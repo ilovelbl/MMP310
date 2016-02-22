@@ -35,7 +35,6 @@ ul{
     list-style: none;
     padding: 8px;
     color: black;
-    margin: 20px;
 }
 ul li{
     display: inline-block;
@@ -49,7 +48,6 @@ ul li ul {/* drop list*/
     position: absolute;
     left: 0;
     width: 200px;
-    top: 1.3em;
     background: lightblue;
 }
 
