@@ -1,15 +1,15 @@
-var submit = document.getElementById("submit");
+var upload = document.getElementById("upload");
+var massage = document.getElementById("message");
+upload.onclick = function() {
 
-submit.onclick = function() {
+    var reaction = [];
 
-    var responses = [];
+    var reactionElements = document.getElementsByClassName("reaction")
 
-    var responseElements = document.getElementsByClassName("response")
+    for (var i = 0; i < reactionElements.length;i++)
+        reaction.push(reactionElements[i].value);
 
-    for (var i = 0; i < responseElements.length;i++)
-        responses.push(responseElements[i].value);
 
-    var massage = document.getElementById("message");
 
-    message.innerHTML = "Hello " + responses[0] + ", from " + responses[2] + ", welcome to my website.";
+    message.innerHTML = "Hello " + reaction[1] + " " +reaction[0] + ", from " + reaction[2] + ", welcome to my website.";
 };
