@@ -7,5 +7,5 @@ upload.onclick = function() {
     for (var i = 0; i < reactionElements.length;i++)
         reaction.push(reactionElements[i].value);
 
-    message.innerHTML = "Hello " + reaction[1] + " " +reaction[0] + ", from " + reaction[2] + ", welcome to my website of MMP310.";
+    message.innerHTML = "Hello " + reaction[1] + " " +reaction[0] + ", from " + reaction[2] + ", welcome to my website of MMP310." + "Thank you for your comments which is about " +reaction[3];
 };
