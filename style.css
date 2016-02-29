@@ -16,7 +16,7 @@ h1 {
 }
 p, ul{ color:white;}
 
-img {width: 200px;}
+img {width: 200px; margin-left: 30%;}
 nav {
     display: block;
     background: white;

@@ -1,7 +1,7 @@
 /*style sheet*/
 body {
     font-family: Arial, sams-serif, Helvetica;
-    background: #CCEBE7;
+    background: #ccc;
     margin: 5%;
     line-height: 1.45;/*    jianju^*/
     font-size: 20px;
@@ -16,7 +16,10 @@ h1, h2{
 }
 p, ul{ color: rgb(99,150,50);}
 
-img {width: 200px;}
+img {
+    width: 200px;
+    margin-left: 30%;
+}
 nav {
     display: block;
     background: white;
@@ -63,13 +66,19 @@ ul li:hover ul{
     font-size: 30px;
 }
 
-#ball {
-    margin: auto;
-    position: relative;
-    border-style: solid;
-    border: 3px;
-    border-radius:150px;
-    width:300px;
-    height:300px;
-    background-color:rgb(40,40,40);
+select{
+    background-color: rgb(50,50,50);
+    color: #ccc;
+}
+textarea {
+    background-color: rgb(50,50,50);
+}
+
+input {
+    background-color: rgb(50,50,50);
+}
+
+button {
+    color: rgb(200,200,200);
+    background-color: rgb(30,30,30);
 }
