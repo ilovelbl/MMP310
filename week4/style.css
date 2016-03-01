@@ -71,12 +71,14 @@ select, textarea, input{
     background-color: rgb(50,50,50);
     color: rgb(140,140,255);
 }
-placeholde{color: aqua;}
-
 
 textarea:focus, input:focus {
     color: #ffffff;
 }
+input:placeholder {
+    color: rgb(140,140,255);
+}
+
 
 button {
     color: rgb(200,200,200);
