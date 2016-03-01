@@ -1,7 +1,7 @@
 /*style sheet*/
 body {
     font-family: Arial, sams-serif, Helvetica;
-    background: #ccc;
+    background: rgb(70,70,70);
     margin: 5%;
     line-height: 1.45;/*    jianju^*/
     font-size: 20px;
@@ -11,10 +11,10 @@ body {
     margin: 0 auto;
 }
 h1, h2{
-    color: #445C58;
+    color: rgb(50,100,205);
     font-weight:200;
 }
-p, ul{ color: rgb(99,150,50);}
+p, ul{ color: rgb(50,100,205);}
 
 img {
     width: 200px;
@@ -22,7 +22,7 @@ img {
 }
 nav {
     display: block;
-    background: white;
+    background: rgb(50,50,50);
 }
 lable {
     color: aliceblue;
@@ -30,7 +30,7 @@ lable {
     background: white;
 }
 a {
-    color: black;
+    color: rgb(50,100,205);
     text-decoration: none;
     transition: color 500ms;
 }
@@ -66,19 +66,20 @@ ul li:hover ul{
     font-size: 30px;
 }
 
-select{
-    background-color: rgb(50,50,50);
-    color: #ccc;
-}
-textarea {
-    background-color: rgb(50,50,50);
-}
 
-input {
+select, textarea, input{
     background-color: rgb(50,50,50);
+    color: rgb(140,140,255);
+}
+placeholde{color: aqua;}
+
+
+textarea:focus, input:focus {
+    color: #ffffff;
 }
 
 button {
     color: rgb(200,200,200);
     background-color: rgb(30,30,30);
 }
+
