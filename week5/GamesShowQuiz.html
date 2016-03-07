@@ -1,34 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Week 5 Gameshow Quiz</title>
     <link rel="stylesheet" href="style5.css">
-    <link rel="stylesheet" href="main5.js">
+    <meta charset="utf-8" />
+
 </head>
+
 <body>
-        <div id="container">
-            <h1>Week 5 Short Quiz</h1>
-            <nav>
-                <ul>
-                    <li id="home"><a href="../index.html">Home</a></li>
+    <div id="container">
+        <h1>Week 5 Short Quiz</h1>
 
-                    <li><a href="https://github.com/ilovelbl/MMP310">My Class Site Github Link</a></li>
-                </ul>
-            </nav>
+        <nav>
+            <ul>
+                <li id="home"><a href="../index.html">Home</a></li>
 
-            <h3>Welcome, Player</h3>
-            <input class="response" type="text" name="IGN" placeholder="Your In Game Name" size="30">
-            <h4>There are few question which you might be interested. Please leave your answer here, thanks you. Have fun!</h4>
+                <li><a href="https://github.com/ilovelbl/MMP310">My Class Site Github Link</a></li>
+            </ul>
+        </nav>
 
+        <h3>Welcome, Player</h3>
+        <input id="name" type="text" name="IGN" placeholder="Your In Game Name" size="30" />
+        <h4>There are few question which you might be interested. Please leave your answer here, thanks you. Have fun!</h4>
+        <div id="box1">
+            <p style="margin-bottom: -10px; font-size: 50px;">Are you ready?</p>
+            <p>
+                <button id="yn">Yes</button> or
+                <button id="no">No </button>
+            </p>
+            <p id="message"></p>
+            <br>
+            <!--            question start         -->
+            <div id="box2">
+                <p>Question 1: Is sky blue?</p>
+                <p>
+                    <button class="right">Yes</button> or
+                    <button class="wrong">No </button>
+                </p>
 
-                <p style="margin-bottom: -15px; font-size: 50px;">Are you ready?</p>
-                <p><button id="upload">Yes</button> or <button class="yn2">No </button></p>
+                <p>Question 2: Is sky blue?</p>
+                <p>
+                    <button class="right">Yes</button> or
+                    <button class="wrong">No </button>
+                </p>
 
+                <p>Question 3: Is sky blue?</p>
+                <p>
+                    <button class="right">Yes</button> or
+                    <button class="wrong">No </button>
+                </p>
 
-            <p id="question"></p>
+                <p>Question 4: Is sky blue?</p>
+                <p>
+                    <button class="right">Yes</button> or
+                    <button class="wrong">No </button>
+                </p>
+
+                <p>Question 5: Is sky blue?</p>
+                <p>
+                    <button class="right">Yes</button> or
+                    <button class="wrong">No </button>
+                </p>
+                <p>check your score</p>
+                <button id="submit">Get grades</button>
+                <p id="result"></p>
+
+            </div>
+        </div>
 
 
     </div>
+    <script src="main5.js"></script>
 </body>
+
 </html>
