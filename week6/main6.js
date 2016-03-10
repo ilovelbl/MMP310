@@ -17,3 +17,9 @@ var newdiv = document.createElement("div");
 newdiv.className = "box";
 newdiv.appendChild(img2);
 c.appendChild(newdiv);
+
+var textdiv = document.createElement("div");
+textdiv.id = "text";
+c.appendChild(textdiv);
+var p = document.createElement("p");
+textdiv.appendChild(p);
