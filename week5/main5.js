@@ -56,7 +56,11 @@ submit.onclick = function() {
         }else if (r < 3){
             commen = "try hard";
         }
-
+var b = document.querySelector("#onclick");
+b.onclick = function(event) {
+	console.log("You clicked me!");
+	console.log(this);
+};
     var result = document.getElementById("result");
     result.innerHTML = commen + " you have " + r + "/5 right, " + w  +" /5 wrong, " + " thank you";
 };
