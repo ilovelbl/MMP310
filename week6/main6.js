@@ -22,4 +22,34 @@ var textdiv = document.createElement("div");
 textdiv.id = "text";
 c.appendChild(textdiv);
 var p = document.createElement("p");
+p.id = "message";
 textdiv.appendChild(p);
+
+var message = document.getElementById("message");
+message.innerHTML = "Come on, lest show something here" ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

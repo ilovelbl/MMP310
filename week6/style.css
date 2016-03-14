@@ -14,14 +14,18 @@ h1 {
     color: #445C58;
     font-weight:200;
 }
-p, ul{ color:white;}
+p, ul{ color: rgb(99,150,50);}
 
-img {width: 200px; margin-left: 30%;}
+img {width: 200px;}
 nav {
     display: block;
     background: white;
 }
-
+lable {
+    color: aliceblue;
+    display: block;
+    background: white;
+}
 a {
     color: black;
     text-decoration: none;
