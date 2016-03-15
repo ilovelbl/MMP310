@@ -19,7 +19,7 @@ var c = document.getElementById("container");
 //c.appendChild(newdiv);
 
 var textdiv = document.createElement("div");
-textdiv.id = "text";
+textdiv.className = "text";
 c.appendChild(textdiv);
 
 var reaction = [];
@@ -186,33 +186,119 @@ textdiv.appendChild(br);
 
 var textZone = document.createElement("textarea");
 textZone.className = "reaction";
-textZone.cols = 90;
-textZone.rows = 10;
+//textZone.rows = 10;
+textZone.placeholder = "Task 1";
 textdiv.appendChild(textZone);
 
-var br =  document.createElement("br");
-textdiv.appendChild(br);
+    var br =  document.createElement("br");
+    textdiv.appendChild(br);
 
 var butn = document.createElement("button");
 butn.innerHTML = "Click and Upload";
 butn.id = "upload";
 textdiv.appendChild(butn);
 
+/////////////////////////text area 2////////////////////////
+
+var textdiv2 = document.createElement("div");
+textdiv2.className = "text";
+c.appendChild(textdiv2);
+
+var reaction2 = [];
+var reaction2Elements = document.getElementsByClassName("reaction2");
+
+
+    var br2 =  document.createElement("br");
+    textdiv2.appendChild(br2);
+
+var textZone2 = document.createElement("textarea");
+textZone2.className = "reaction2";
+textZone2.placeholder = "Task 2";
+textdiv2.appendChild(textZone2);
+
+    var br2 =  document.createElement("br");
+    textdiv2.appendChild(br2);
+
+var butn2 = document.createElement("button");
+butn2.innerHTML = "Click and Upload";
+butn2.id = "upload2";
+textdiv2.appendChild(butn2);
+
+
+/////////////////////////text area end 2////////////////////////
+
+
+var textdiv3 = document.createElement("div");
+textdiv3.className = "text";
+c.appendChild(textdiv3);
+
+var reaction3 = [];
+var reaction3Elements = document.getElementsByClassName("reaction3");
+
+
+    var br3 =  document.createElement("br");
+    textdiv3.appendChild(br3);
+
+var textZone3 = document.createElement("textarea");
+textZone3.className = "reaction3";
+textZone3.placeholder = "Task 3";
+textdiv3.appendChild(textZone3);
+
+    var br3 =  document.createElement("br");
+    textdiv3.appendChild(br3);
+
+var butn3 = document.createElement("button");
+butn3.innerHTML = "Click and Upload";
+butn3.id = "upload3";
+textdiv3.appendChild(butn3);
+
+////////////////////////// 3 3nd////////////////////////
 var para = document.createElement("p");
 para.id = "message";
-textdiv.appendChild(para);
+c.appendChild(para);
 
+var parac = document.createElement("p");
+parac.id = "messag";
+c.appendChild(parac);
 
 butn.onclick = function(event) {
 	console.log("You clicked me!");
 	console.log(this);
-    for (var i = 0; i < reactionElements.length;i++)
-        reaction.push(reactionElements[i].value);
+    var brb =  document.createElement("br");
 
-    message.innerHTML = "Hello, on " + reaction[0] + " " +reaction[1] + " you need do :" + reaction[2];
+    for (var i = 0; i < reactionElements.length;i++)
+    reaction.push(reactionElements[i].value);
+    message.innerHTML = "Hello, Please remember on " + reaction[0] + " " + reaction[1] + ", don't forget: ";
+    messag.innerHTML = "     " + reaction[2];
 
 };
 
+
+var para2 = document.createElement("p");
+para2.id = "message2";
+c.appendChild(para2);
+
+butn2.onclick = function(event) {
+	console.log("You butn2!");
+	console.log(this);
+    for (var i = 0; i < reaction2Elements.length;i++)
+        reaction2.push(reaction2Elements[i].value);
+    message2.innerHTML = "     " + reaction2[0];
+
+};
+
+var para3 = document.createElement("p");
+para3.id = "message3";
+c.appendChild(para3);
+
+butn3.onclick = function(event) {
+	console.log("You butn3!");
+	console.log(this);
+    for (var i = 0; i < reaction3Elements.length;i++)
+        reaction3.push(reaction3Elements[i].value);
+    message3.innerHTML = "     " + reaction3[0];
+
+};
 
 
 
