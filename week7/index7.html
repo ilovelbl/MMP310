@@ -3,13 +3,26 @@
 <head>
 	<title>Week 7 Random Password</title>
 	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<h1>Week 7 Random Password</h1>
 	<h2>Sign up for week7</h2>
-	<input type="text" placeholder="Pick your User name" />
-	<input id="message" type="text" placeholder="Create a password"/>
+	<input id="ur" type="text" placeholder="Pick your User name" />
+	<input id="password" type="text" placeholder="Create a password"/>
 	<button id="submit">Sign Up</button>
+	<button id="ps">Random PW</button>
+	<p id="message"></p>
+
+    <form name="myform" method="post" action="">
+    <input type="hidden" name="length" value="10">
+    <input id="row_pas" type="text" size="40">&nbsp;
+    <input type="button" class="button" value="Generate" onClick="generate();" tabindex="2">
+
+
+</form>
+
+
 
 	<script src="main7.js" type="text/javascript"></script>
 </body>

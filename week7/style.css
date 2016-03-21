@@ -14,9 +14,9 @@ h1 {
     color: #445C58;
     font-weight:200;
 }
-p, ul{ color:#445C58;}
+p, ul{ color:white;}
 
-img {width: 200px;}
+img {width: 200px; margin-left: 30%;}
 nav {
     display: block;
     background: white;
@@ -43,10 +43,11 @@ ul li{
 }
 
 ul li ul {/* drop list*/
+    font-size: 16px;
     display: none;
     position: absolute;
     left: 0;
-
+    width: 200px;
     background: lightblue;
 }
 
@@ -57,8 +58,3 @@ ul li:hover ul{
 #home {
     font-size: 30px;
 }
-=======
-body {
-    background-color: rgb(90,50,70);
-}
->>>>>>> origin/master
