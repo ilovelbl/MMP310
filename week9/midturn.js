@@ -1,11 +1,11 @@
 var startButton = document.getElementById("start");
-var quiz = document.createElement("quiz");
+var quizdiv = document.createElement("div");
 var question = document.getElementById("input");
 var counntDisplay= document.getElementById("countdowm")
 
 //console.log(startButton,quiz,input);
 
-quiz.style.display = "none";
+quizdiv.style.display = "none";
 
 startButton.addEventListener("click",function(){
     quiz.style.display = "black";
