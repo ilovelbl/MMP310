@@ -1,7 +1,7 @@
 /*style sheet*/
 body {
     font-family: Arial, sams-serif, Helvetica;
-    background: rgb(150,250,150);
+    background: rgb(170,250,170);
     margin: 5%;
     line-height: 1.45;/*    jianju^*/
     font-size: 20px;
@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
 }
 #countdown{
-    font-size: 40px;
+    font-size: 35px;
     position: fixed;
     right:100px;
     top:100px;
