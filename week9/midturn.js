@@ -3,7 +3,7 @@ var quiz = document.getElementById("quiz");
 var rightAnswer = document.getElementsByClassName("right");
 var wrongAnswer = document.getElementsByClassName("wrong");
 
-var count = 50;//out of the click fuction means this var can be controled by submitButton
+var count = 60;//out of the click fuction means this var can be controled by submitButton
 var countDisplay = document.getElementById("countdown");
 
 quiz.style.display = "none";
