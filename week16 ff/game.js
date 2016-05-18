@@ -73,9 +73,7 @@ function draw() {
 		cowboy.changeAnimation("walk");
 		platform.position.x -= speed;
 		obstacle.position.x -= speed;
-	} else {
-		cowboy.changeAnimation("stand");
-	}
+	} 
 
 	if (platform.position.x < 0) platform.position.x = width/2;
 	if (obstacle.position.x < -obstacle.width/2) obstacle.position.x = random(width, width*2);
@@ -85,6 +83,7 @@ function draw() {
 	if ( cowboy.collide( platform ) ) {
 		cowboy.velocity.y = 0;
 		if (jumping) jumping = false;
+        cowboy.changeAnimation("stand");
 	}
 
 	if ( keyDown( "space" ) && !jumping ) {
@@ -93,25 +92,24 @@ function draw() {
 		jumping = true;
         
     } else {
-        cowboy.changeAnimation("stand");
+       // 
     }
 	
 
-	if ( cowboy.collide(obstacle) || cowboy.collide(bullets)) {
+	if ( cowboy.collide(obstacle) ) {
 		dead = true;
         jump = 0;
         cowboy.changeAnimation("died");
-
-        bullets.remove();
 	}
 
 	drawSprites();
 
     
-//    if (bullets.collide(cowboy)){
-//        dead = true;
-//        
-//        }
+    if (bullets.collide(cowboy)){
+        dead = true;
+        cowboy.changeAnimation("died");
+        bullets.remove();
+        }
     
     
     
