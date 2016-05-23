@@ -6,6 +6,7 @@ var jumping = false;
 var dead = false;
 var bullets;
 var firing = false;
+var shooting = false;
 
 var gravity = 1;
 
@@ -108,14 +109,14 @@ function draw() {
 		jumping = true;
     }
 
-    if ( keyWentDown( "f" )) {
+    if ( keyWentDown( "f" ) && !shooting) {
         cowboy.changeAnimation("shot");
-
         bullets = createSprite(200,463);
         bullets.addAnimation("shoot","b1.png","b2.png","b3.png");
         bullets.setSpeed(-15,180);
         bullets.setCollider("circle", -15, 0, 10);
         bullets.debug = true;
+      /*  shooting = true;*/
 
 	}
 
@@ -134,7 +135,10 @@ function draw() {
 
 	if (platform.position.x < 0) platform.position.x = width/2;
 	if (pirate.position.x < -pirate.width/2) pirate.position.x = random(width, width*2);
-	if (fire.position.x < 0) fire.position.x = width;
+
+    if (fire.position.x < -150) {
+        fire.position.x = random(width, width*2);
+    }
 
 	if ( cowboy.collide(pirate) || cowboy.collide(fire) ) {
 		dead = true;
