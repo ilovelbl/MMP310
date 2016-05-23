@@ -72,12 +72,13 @@ function setup() {
     pirate.setCollider("rectangle", 0, 0, 150, 280);
     pirate.debug = true;
 
-    fire = createSprite (550, 620, 50, 2800);
+    fire = createSprite (1050, 620, 150, 280);
     fire.setCollider("circle", 0, 15, 60, 60);
     fire.addAnimation("fire", fire_ff);
     fire.debug = true;
 
-    bullets = createSprite(1200,550);        bullets.addAnimation("shoot","b1.png","b2.png","b3.png");
+    bullets = createSprite(1200,550);
+    bullets.addAnimation("shoot","b1.png","b2.png","b3.png");
     bullets.setSpeed(-15,180);
     bullets.setCollider("circle", -15, 0, 10);
     bullets.debug = true;
@@ -110,7 +111,8 @@ function draw() {
     if ( keyWentDown( "f" )) {
         cowboy.changeAnimation("shot");
 
-        bullets = createSprite(200,463);        bullets.addAnimation("shoot","b1.png","b2.png","b3.png");
+        bullets = createSprite(200,463);
+        bullets.addAnimation("shoot","b1.png","b2.png","b3.png");
         bullets.setSpeed(-15,180);
         bullets.setCollider("circle", -15, 0, 10);
         bullets.debug = true;
@@ -132,6 +134,7 @@ function draw() {
 
 	if (platform.position.x < 0) platform.position.x = width/2;
 	if (pirate.position.x < -pirate.width/2) pirate.position.x = random(width, width*2);
+	if (fire.position.x < 0) fire.position.x = width;
 
 	if ( cowboy.collide(pirate) || cowboy.collide(fire) ) {
 		dead = true;
